@@ -5,7 +5,7 @@ const input_var = document.getElementById('add-todo-item')
 const attribution = document.querySelector('.attribution')
 
 function ChangeMode(){
-    if(toggle_mode.checked){
+    if(!toggle_mode.checked){
         html_var.classList.replace("bg-light", "bg-dark")
         todo_list.classList.replace("item-light", "item-dark")
         input_var.classList.replace("item-light", "item-dark")
