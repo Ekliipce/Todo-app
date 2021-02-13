@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Todo app</title>
+</head>
+<body >
+  <header>
+    <h1>Todo<h1>
+    <div>
+      <input type="checkbox" name="t-light-dark" id="t-light-dark"hidden>
+      <label for="t-light-dark"></label>
+    </div>
+  </header>
+  <section>
+    <div id="add-todo-item" class="item item-dark">
+      <div class="toggle">
+        <input type="checkbox" name="0" id="" class='radio' hidden>
+        <label for="0"></label>
+      </div>
+      <input type="text" name="add-todo" id="add-todo-input" 
+      placeholder="Create a new todo ...">
+    </div>
+
+    <div id="todo-list" class="item-dark">
+      <div id="container-of-todo-items">
+        <div class="item">
+          <input type="checkbox" name="" id="item1" class='radio' hidden>
+          <label for="item1"></label>
+          <p>Open Project</p>
+          <div class="cross"></div>
+        </div> 
+        <div class="item">
+          <input type="checkbox" name="" id="2" class='radio' hidden>
+          <label for="2"></label>
+          <p>Test features</p>
+          <div class="cross"></div>
+        </div> 
+        <div class="item">
+          <input type="checkbox" name="" id="3" class='radio' hidden>
+          <label for="3"></label>
+          <p>And share with others</p>
+          <div class="cross"></div>
+        </div> 
+      </div>
+  
+      <nav>
+        <div>
+          <span id="number-of-item-left"></span>
+        </div>
+        <div id="sort-buttons">
+          <span>
+            <input type="radio" name="sort" class="sort" id="list-all" hidden checked>
+            <label for="list-all">All</label>
+          </span>
+          <span>
+            <input type="radio" name="sort" class="sort" id="list-active" hidden>
+            <label for="list-active">Active</label></span>
+          <span>
+            <input type="radio" name="sort" class="sort" id="list-completed" hidden>
+            <label for="list-completed">Completed</label>
+          </span>
+        </div>
+        <div>
+          <a href="#" id="clear">Clear Completed</a> 
+        </div>
+      </nav>
+    </div>
+  </section>
+  <div id="advice"> Drag and drop to reorder list</div>
+ 
+  <div class="attribution att-dark">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Ekliipce/">Charles-André Arsenec</a>.
+  </div>
+  <script src="app.js"></script>
+  <script src="mode.js"></script>
+</body>
+</html>
